@@ -1,0 +1,345 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #e8eef6;
+    font-family: Arial, sans-serif;
+    color: #172235;
+}
+
+.lecturer-page-container {
+    width: 94%;
+    max-width: 1180px;
+    margin: 40px auto;
+}
+
+.lecturer-signup-container {
+    width: 100%;
+    padding: 0;
+
+    display: grid;
+    grid-template-columns: 38% 62%;
+
+    background: #ffffff;
+    border: 1px solid #e3e7ec;
+    border-radius: 18px;
+    overflow: hidden;
+
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.09);
+}
+
+
+/* =========================
+   LEFT SIDE
+   ========================= */
+
+.lecturer-signup-left {
+    background: #173b6c;
+    color: #ffffff;
+
+    padding: 65px 48px;
+
+    display: flex;
+    align-items: center;
+}
+
+.lecturer-left-content {
+    width: 100%;
+}
+
+.lecturer-brand-icon {
+    width: 68px;
+    height: 68px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 16px;
+
+    font-size: 28px;
+    margin-bottom: 32px;
+}
+
+.lecturer-signup-left h1 {
+    margin: 0;
+
+    color: #ffffff;
+    font-size: 38px;
+    line-height: 1.1;
+    letter-spacing: -0.8px;
+}
+
+.lecturer-tagline {
+    margin-top: 15px;
+
+    color: #d9bd8b;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.lecturer-description {
+    margin-top: 28px;
+    max-width: 320px;
+
+    color: #dbe7f5;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.lecturer-features {
+    margin-top: 38px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.lecturer-feature {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.lecturer-feature i {
+    width: 27px;
+    height: 27px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.15);
+
+    font-size: 12px;
+}
+
+
+/* =========================
+   RIGHT SIDE
+   ========================= */
+
+.lecturer-signup-right {
+    padding: 48px 55px 42px;
+}
+
+.lecturer-signup-title {
+    text-align: left;
+    margin-bottom: 32px;
+}
+
+.lecturer-signup-title h2 {
+    color: #173b6c;
+    font-size: 30px;
+    margin: 0 0 7px;
+}
+
+.lecturer-signup-title p {
+    margin: 0;
+
+    color: #64748b;
+    font-size: 15px;
+}
+
+/* FORM GRID */
+
+.lecturer-form-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: calc(50% - 12px) calc(50% - 12px);
+    gap: 20px 24px;
+}
+
+.lecturer-form-group {
+    width: 100%;
+    min-width: 0;
+    margin: 0;
+}
+
+.lecturer-form-group label {
+    display: block;
+    margin-bottom: 7px;
+    color: #222222;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.lecturer-form-group input,
+.lecturer-form-group select {
+    box-sizing: border-box;
+    width: 100%;
+    height: 48px;
+    padding: 0 14px;
+    border: 1px solid #d5dbe3;
+    border-radius: 9px;
+    background: #ffffff;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    outline: none;
+}
+
+/* =========================
+   PASSWORD
+   ========================= */
+
+.lecturer-password-wrapper {
+    position: relative;
+}
+
+.lecturer-password-wrapper input {
+    width: 100%;
+    padding-right: 48px;
+}
+
+.lecturer-password-toggle {
+    position: absolute;
+
+    top: 50%;
+    right: 16px;
+
+    transform: translateY(-50%);
+
+    border: none;
+    background: transparent;
+
+    color: #64748b;
+
+    cursor: pointer;
+
+    font-size: 16px;
+
+    padding: 0;
+}
+
+.lecturer-password-toggle:hover {
+    color: #173b6c;
+}
+
+
+/* =========================
+   BOTTOM
+   ========================= */
+
+.lecturer-form-bottom {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-top: 30px;
+}
+
+.lecturer-login-link {
+    margin: 0;
+
+    color: #64748b;
+    font-size: 14px;
+}
+
+.lecturer-login-link a {
+    color: #173b6c;
+
+    font-weight: 600;
+
+    text-decoration: none;
+}
+
+.lecturer-login-link a:hover {
+    text-decoration: underline;
+}
+
+.lecturer-form-bottom .lecturer-signup-button {
+    width: 210px;
+    height: 50px;
+
+    margin: 0 0 0 auto;
+
+    border: none;
+    border-radius: 9px;
+
+    background: #173b6c;
+    color: #ffffff;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.lecturer-form-bottom .lecturer-signup-button:hover {
+    background: #102d52;
+}
+
+
+/* =========================
+   ERROR
+   ========================= */
+
+.lecturer-registration-error {
+    margin-bottom: 20px;
+
+    color: #c62828;
+
+    font-size: 14px;
+
+    text-align: center;
+}
+
+
+/* =========================
+   RESPONSIVE
+   ========================= */
+
+@media (max-width: 850px) {
+
+    .lecturer-page-container {
+        width: 92%;
+        margin: 25px auto;
+    }
+
+    .lecturer-signup-container {
+        grid-template-columns: 1fr;
+    }
+
+    .lecturer-signup-left {
+        padding: 40px;
+    }
+
+    .lecturer-description {
+        max-width: 100%;
+    }
+
+    .lecturer-signup-right {
+        padding: 40px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .lecturer-form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .lecturer-signup-left,
+    .lecturer-signup-right {
+        padding: 30px 24px;
+    }
+
+    .lecturer-signup-left h1 {
+        font-size: 31px;
+    }
+
+    .lecturer-signup-title h2 {
+        font-size: 27px;
+    }
+}

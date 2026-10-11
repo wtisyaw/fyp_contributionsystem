@@ -1,0 +1,103 @@
+.register-choice-body {
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f4f7fb;
+}
+.register-choice-box {
+    width: 100%;
+    max-width: 520px;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 15px 45px rgba(15, 23, 42, 0.08);
+}
+.register-choice-logo {
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    border-radius: 14px;
+    background: #173b6c;
+    color: #ffffff;
+    font-size: 22px;
+}
+.register-choice-box h1 {
+    margin: 0 0 8px;
+    color: #173b6c;
+    font-size: 30px;
+}
+.register-choice-subtitle {
+    margin: 0 0 28px;
+    color: #64748b;
+}
+.register-choice-options {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+.register-choice-card {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 18px;
+    border: 1px solid #dbe3ed;
+    border-radius: 14px;
+    text-decoration: none;
+    color: #172235;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+.register-choice-card:hover {
+    transform: translateY(-2px);
+    border-color: #173b6c;
+}
+.register-choice-icon {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    border-radius: 12px;
+    background: #eef4fb;
+    color: #173b6c;
+    font-size: 20px;
+}
+.register-choice-card h2 {
+    margin: 0 0 4px;
+    font-size: 18px;
+    color: #173b6c;
+}
+.register-choice-card p {
+    margin: 0;
+    color: #64748b;
+    font-size: 14px;
+}
+.register-choice-arrow {
+    margin-left: auto;
+    color: #94a3b8;
+}
+.register-back {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 26px;
+    padding: 11px 16px;
+    background: #eef4fb;
+    color: #173b6c;
+    border: 1px solid #d6e2f0;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    transition: transform 0.2s ease;
+}
+.register-back:hover {
+    opacity: 0.99;
+}
